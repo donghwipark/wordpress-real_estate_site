@@ -13,19 +13,16 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'house' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'house' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'house' ), 'house', '<a href="http://www.eastlead.org">eastlead</a>' );
-				?>
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="container-fluid">
+			<div class="row">
+                <div class="bottom-navigation col-sm-6 col-sm-push-6">
+                    Menu Bottom
+                </div><!-- footer right content -->
+                <div class="footer-text col-sm-6 col-sm-pull-6">
+                    &copy;<?php echo date( 'Y' ).' '.get_bloginfo( 'name' ); ?>
+                </div><!-- footer left content -->
+            </div><!-- .row -->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
